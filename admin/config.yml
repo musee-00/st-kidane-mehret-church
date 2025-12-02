@@ -1,10 +1,9 @@
 backend:
-  name: github
-  repo: musee-00/st-kidane-mehret-church  # your repo name
-  branch: main  # branch to update
+  name: git-gateway
+  branch: main
 
-media_folder: "images"      # where uploaded images will go
-public_folder: "images"
+media_folder: "images" # where uploaded images will go
+public_folder: "/images"
 
 collections:
   - name: "updates"
@@ -17,8 +16,8 @@ collections:
       - { label: "Content", name: "content", widget: "text" }
 
   - name: "gallery"
-    label: "Gallery Images"
-    folder: "_gallery"
+    label: "Gallery"
+    folder: "images"
     create: true
     slug: "{{slug}}"
     fields:
